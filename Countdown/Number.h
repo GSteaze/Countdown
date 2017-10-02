@@ -8,18 +8,26 @@ public:
 	Number();
 	~Number();
 
-	int userInput;
+	bool RunAgain();
 
 	int UserInput();
 
 private:
 
+	int userInput;
+
 	int validatedInput, number, reversedNumber;
 
 	int InputValidater(int userInput);
 
-	int Reverse(int validatedInput);
+	int Reverse(int validatedInput,bool isNegative);
 
-	int Sorter(int validatedInput);
+	//int Sorter(int validatedInput);
+	
+	bool IsNegative(int validatedInput);
+
+	void DisplayResults(int validatedInput);
+
+
 };
 
